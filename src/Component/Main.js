@@ -146,7 +146,7 @@ const Main = () => {
                             </div>
                             <div className="mb-1">
                                 <label className="form-label">About Yourself</label>
-                                <input type="textarea" className="form-control" name='desc' {...register('desc')} />
+                                <textarea  className="form-control" name='desc' {...register('desc')} />
                             </div>
 
                             <div className="btn-box">

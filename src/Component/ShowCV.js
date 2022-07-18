@@ -16,6 +16,7 @@ const ShowCV = ({ Main }) => {
                             <img src={Main.image} alt="image" id="pic" />
                             <h1 id="personName">{Main.name}</h1>
                             <div className="occupation">{Main.occupation}</div>
+                            <div className="desc">{Main.desc}</div>
                         </div>
                         <div className="contentWrapper">
                             <div className="section one">

@@ -16,6 +16,11 @@ const StaticCV = () => {
                             <img src={Image} alt="image" id="pic" />
                             <h1 id="personName">John Dev</h1>
                             <div className="occupation">Web Developer</div>
+                            <div className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti fuga 
+                            veniam, animi vero tenetur suscipit numquam sit libero minus voluptas. Sequi aut quis unde
+                             possimus.
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quis tempore vero fugit officia 
+                             error repudiandae deleniti minus quisquam sed?</div>
                         </div>
                         <div className="contentWrapper">
                             <div className="section one">
