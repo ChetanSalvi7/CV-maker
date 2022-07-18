@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: #5f9ea0 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container-fluid {
+  justify-content: center !important;
   flex-direction: column;
+  color: #fff !important;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 23px !important;
+  font-weight: 600;
+}
+.form-container {
+  margin: 5rem auto 2rem;
+}
+.main-title p {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0 !important;
+  border-bottom: 2px solid #ccc;
+}
+.form-label {
+  font-weight: 700;
+  font-size: 18px;
+}
+.form-control {
+  border-radius: 0% !important;
+  background: rgb(238, 238, 238) !important;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+.btn-next {
+  border-radius: 0% !important;
+  background-color: #5f9ea0;
+  color: #fff;
+  margin: 10px 0;
+  padding: 6px 100px;
+  float: right;
+  border: none;
+}
+.btn-back {
+  border-radius: 0% !important;
+  background-color: #221e1ec9;
+  color: #fff;
+  margin: 10px 0;
+  padding: 6px 100px;
+  float: right;
+  border: none;
+}
+.btn-next:hover {
+  background-color: #388f92;
+}
+.btn-back:hover {
+  background-color: #332c2c;
+}
+.cvWrapper,
+.themeContainer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.cvWrapper {
+  width: 100%;
+  padding-right: 1em;
+  margin: 3em 0.5em 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.intro {
+  background-color: #d8e2dc;
+  font-size: .8rem;
+  width: 40%;
+  text-align: center;
+  margin-top: 0;
+  padding: 2em 1em 1em;
+}
+#pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto auto 15px;
+}
+#personName{
+  font-size: 1.4rem;
+}
+.occupation{
+  text-transform: capitalize;
+}
+.contentWrapper {
+  font-family: "Roboto",sans-serif;
+  background-color: #f0efeb;
+  padding: 2em 1em;
+  width: 70%;
+}
+.section {
+  margin-bottom: 2.5em;
+  line-height: 25px;
+}
+.sectionTitle {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #aaa;
+  text-transform: uppercase;
+  padding-bottom: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#section-2 , #section-3 ,.cv-view,.print-cvvv{
+  display: none;  
+}
+.btn-top-back{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+}
+i{
+  font-size: 18px;
+}
+@media print {
+  #printPageButton  , #Navbar {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .end-btn {
+    display: none;
   }
+  i{
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 751px) {
+  .cvWrapper {
+    width: 70%;
+    margin: 3em;
+  }
+  
+}
+@media only screen and (min-width: 464px) {
+  .cvWrapper {
+    width: 90%;
+    margin: 2em;
+  }
+  
+}
+@media screen and (max-width: 576px){
+  .btn-back , .btn-next{
+    padding: 5px 25px;
+  }
+  .form-label {
+    font-weight: 700;
+    font-size: 16px;
+}
+  .form-control{
+    font-size: 0.8rem !important;
+  }
+  .form-control , #personName {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 767px){
+  .btn-back , .btn-next{
+    padding: 5px 40px;
+  }
+}
+.footer{
+ 
+  width: 100%;
+  margin-top: 20px ;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  background: cadetblue;
 }
