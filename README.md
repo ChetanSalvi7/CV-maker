@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/96784802/179532885-68a80d56-8fed-47e2-ad1c-e6e52c0e8640.png)
 
 
-## [View Project Live ](https://github.com/facebook/create-react-app).
+## [View Project Live ](https://cv-maker-1.netlify.app/).
 
 # DESCRIPTION:
 ### This is a cv-maker project which takes user input and creates cv based on that.
