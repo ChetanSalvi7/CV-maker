@@ -1,12 +1,16 @@
 import './App.css';
-import Home from './Component/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { lazy, Suspense } from 'react';
+
+const Home = lazy(() => import('./Component/Home'));
 
 function App() {
   return (
-    
+
     <>
-    <Home />
+      <Suspense fallback={<div class="loading"></div>}>
+        <Home />
+      </Suspense>
     </>
   );
 }
